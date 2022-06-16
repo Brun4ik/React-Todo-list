@@ -1,0 +1,48 @@
+.input {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.input__area {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input__area:focus{
+    box-shadow:  0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.input_button {
+    position: inherit;
+    height: 65px;
+    width: 50px;
+    right: 0px;
+    border: none;
+    font-size: 25px;
+    background-color: darkturquoise;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+
+.input_button:hover {
+    background-color: aqua;
+}
+
+.input_button:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todoList {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
