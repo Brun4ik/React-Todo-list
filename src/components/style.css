@@ -25,14 +25,14 @@
     right: 0px;
     border: none;
     font-size: 25px;
-    background-color: darkturquoise;
-    color: white;
+    background-color: white;
+    color: black;
     transition: 0.2s all;
     box-shadow: 0 0 10px black;
 }
 
 .input_button:hover {
-    background-color: aqua;
+    background-color:darkgray;
 }
 
 .input_button:active {
@@ -46,3 +46,30 @@
     width: 90%;
     flex-wrap: wrap;
 }
+
+.todo_single_list {
+    display: flex;
+    width: 30%;
+    border-radius: 0%;
+    padding: 20px;
+    margin-top: 15px;
+    border: 2px solid black;
+}
+
+
+.todo_single_list_text {
+    flex: 1;
+    padding: 2px;
+    font-size: 25px;
+}
+
+.icons {
+    align-self: center;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+
