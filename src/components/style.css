@@ -42,9 +42,10 @@
 
 .todoList {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
     width: 90%;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .todo_single_list {
@@ -72,4 +73,19 @@
     margin-right: 15px;
 }
 
+.Timer {
+    align-self: center;
+}
 
+.row_timer {
+    display: flex;
+}
+
+.time {
+    margin-right: 15px;
+}
+.button_timer {
+    margin-right: 15px;
+    border: none;
+    border: 1px solid black
+}
