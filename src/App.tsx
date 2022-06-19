@@ -11,7 +11,7 @@ const App: React.FC = () => {
   const addTodo = (e: React.FormEvent) => {
     e.preventDefault();
     if (todo) {
-      setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
+      setTodos([...todos, { id: Date.now(), todo, isDone: false, important: false }]);
       setTodo("");
     }
 

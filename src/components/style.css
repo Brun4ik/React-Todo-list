@@ -87,5 +87,9 @@
 .button_timer {
     margin-right: 15px;
     border: none;
-    border: 1px solid black
+    border: 1px solid black;
+}
+
+.todo_single_list_active {
+    border: 2px solid red;
 }
