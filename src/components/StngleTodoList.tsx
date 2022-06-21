@@ -18,8 +18,8 @@ const StngleTodoList = ({ todo, todos, setTodos }: PropsSingleTodoList) => {
         )
     };
 
-    const handleDelete = (id: number) => {
-
+    const handleDeleteFunc = (id: number) => {
+        setTodos(todos.filter((todo) => todo.id !== id))
     }
 
     const handleImportant = (id: number) => {
@@ -47,7 +47,7 @@ const StngleTodoList = ({ todo, todos, setTodos }: PropsSingleTodoList) => {
             }>
                 <FiEdit />
             </span>
-            <span className="icon" onClick={() => handleDelete(todo.id)}>
+            <span className="icon" onClick={() => handleDeleteFunc(todo.id)}>
                 <RiDeleteBin2Fill />
             </span>
             <span className="icon" onClick={() => handleDone(todo.id)}>
